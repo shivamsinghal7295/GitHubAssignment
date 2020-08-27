@@ -20,16 +20,24 @@
     <string name="public_repository">"See Public Repositories"</string>
 
 
-    <string name="profile_name" > "Name"</string>
-    <string name="profile_email" > "Email"</string>
-    <string name="profile_company" > "Company Name"</string>
-    <string name="profile_location" > "Location"</string>
-    <string name="profile_bio" > "Bio"</string>
-    <string name="twitter_username" > "Twitter Name"</string>
-    <string name="no_of_public_repo" > "Public Repos"</string>
-    <string name="total_private_repos" > "Private Repos"</string>
-    <string name="followers" > "Followers"</string>
-    <string name="user_type" > "User Type"</string>
+    <string name="profile_name"> "Name"</string>
+    <string name="profile_email"> "Email"</string>
+    <string name="profile_company"> "Company Name"</string>
+    <string name="profile_location"> "Location"</string>
+    <string name="profile_bio"> "Bio"</string>
+    <string name="twitter_username"> "Twitter Name"</string>
+    <string name="no_of_public_repo"> "Public Repos"</string>
+    <string name="total_private_repos"> "Private Repos"</string>
+    <string name="followers"> "Followers"</string>
+    <string name="user_type"> "User Type"</string>
+
+
+    <string name="repos_name"> "Name"</string>
+    <string name="repos_id"> "ID"</string>
+    <string name="repos_language"> "Language"</string>
+    <string name="repos_watcher"> "Watcher Count"</string>
+    <string name="repos_open_issues"> "Open Issues"</string>
+    <string name="repos_default_branch"> "Default Branch"</string>
 
 
 </resources>

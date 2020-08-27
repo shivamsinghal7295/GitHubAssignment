@@ -2,12 +2,14 @@ package com.example.githubassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.example.githubassignment.R;
+import com.example.githubassignment.Utils.StaticFields;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,14 +24,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        setTitle("Welcome, "  + StaticFields.username);
+
         //initialize
         initUI();
+
 
         // TODO : Click on Profile
         rl_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO : Open Profile Screen
+                Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -38,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO : Open Repositories Screen
+                Intent intent = new Intent(MainActivity.this,PublicRepositoryActivity.class);
+                startActivity(intent);
             }
         });
 

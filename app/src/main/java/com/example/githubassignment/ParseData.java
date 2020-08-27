@@ -136,17 +136,6 @@ public class ParseData {
             profile.followers = 0;
         }
 
-        if (jsonObject.has("total_private_repos")){
-            if (jsonObject.isNull("total_private_repos")){
-                profile.total_private_repos = 0;
-            }else {
-                profile.total_private_repos = jsonObject.getInt("total_private_repos");
-            }
-        }else {
-            profile.total_private_repos = 0;
-        }
-
-
         return profile;
 
     }

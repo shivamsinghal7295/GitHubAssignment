@@ -13,7 +13,6 @@ public class Profile {
     public String twitter_username;
     public int public_repos;
     public int followers;
-    public int total_private_repos;
 
 
 }
