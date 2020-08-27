@@ -11,6 +11,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.NoConnectionError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -91,17 +92,23 @@ public class LoginActivity extends AppCompatActivity {
 
                 progressDialog.dismiss();
                 if (error instanceof TimeoutError || error instanceof NoConnectionError){
-                    UsedMethods.displayCustomToast(LoginActivity.this,getResources().getString(R.string.check_connection));
+                    UsedMethods.displayCustomToast(LoginActivity.this, getResources().getString(R.string.check_connection));
                 }else {
                     if (error.networkResponse.statusCode == 404 || error.networkResponse.statusCode == 401){
-                        UsedMethods.displayCustomToast(LoginActivity.this,getResources().getString(R.string.enter_correct_user));
+                        UsedMethods.displayCustomToast(LoginActivity.this, getResources().getString(R.string.enter_correct_user));
                         return;
                     }
-                    UsedMethods.displayCustomToast(LoginActivity.this,getResources().getString(R.string.something_wrong));
+                    UsedMethods.displayCustomToast(LoginActivity.this, getResources().getString(R.string.something_wrong));
                 }
 
             }
         });
+
+        request.setRetryPolicy(new DefaultRetryPolicy(
+                6000,
+                5,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        queue.add(request);
 
         queue.add(request);
     }
@@ -154,6 +161,10 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        request.setRetryPolicy(new DefaultRetryPolicy(
+                6000,
+                5,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(request);
     }
 

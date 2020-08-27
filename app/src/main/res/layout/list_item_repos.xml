@@ -38,7 +38,6 @@
                     android:layout_weight="1"
                     android:text="@string/repos_name"
                     android:textSize="14dp"
-                    android:textStyle="bold"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:textColor="@android:color/black"
@@ -49,6 +48,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2.3"
                     android:id="@+id/tv_repos_name"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
                     />
 
             </LinearLayout>
@@ -66,7 +68,6 @@
                     android:layout_weight="1"
                     android:text="@string/repos_id"
                     android:textSize="14dp"
-                    android:textStyle="bold"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:textColor="@android:color/black"
@@ -77,6 +78,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2.3"
                     android:id="@+id/tv_repos_id"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
                     />
 
             </LinearLayout>
@@ -94,7 +98,6 @@
                     android:layout_weight="1"
                     android:text="@string/repos_language"
                     android:textSize="14dp"
-                    android:textStyle="bold"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:textColor="@android:color/black"
@@ -106,6 +109,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2.3"
                     android:id="@+id/tv_repos_language"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
                     />
 
             </LinearLayout>
@@ -123,7 +129,6 @@
                     android:layout_weight="1"
                     android:text="@string/repos_watcher"
                     android:textSize="14dp"
-                    android:textStyle="bold"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:textColor="@android:color/black"
@@ -135,6 +140,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2.3"
                     android:id="@+id/tv_watcher"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
                     />
 
             </LinearLayout>
@@ -152,7 +160,6 @@
                     android:layout_weight="1"
                     android:text="@string/repos_open_issues"
                     android:textSize="14dp"
-                    android:textStyle="bold"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:textColor="@android:color/black"
@@ -164,6 +171,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2.3"
                     android:id="@+id/tv_issues"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
                     />
 
             </LinearLayout>
@@ -182,7 +192,6 @@
                     android:layout_weight="1"
                     android:text="@string/repos_default_branch"
                     android:textSize="14dp"
-                    android:textStyle="bold"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:textColor="@android:color/black"
@@ -194,6 +203,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2.3"
                     android:id="@+id/tv_default_branch"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
                     />
 
             </LinearLayout>
