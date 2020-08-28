@@ -56,4 +56,10 @@ public class MainActivity extends AppCompatActivity {
         rl_profile = findViewById(R.id.rl_profile);
         rl_repos   = findViewById(R.id.rl_repos);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

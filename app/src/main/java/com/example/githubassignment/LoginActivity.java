@@ -26,7 +26,6 @@ import com.example.githubassignment.Utils.UsedMethods;
 import com.example.githubassignment.Utils.UsedUrls;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -110,7 +109,6 @@ public class LoginActivity extends AppCompatActivity {
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(request);
 
-        queue.add(request);
     }
 
     private void requestForPublicRepos(final Profile profile) {
